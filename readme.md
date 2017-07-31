@@ -1,5 +1,7 @@
 # dg-hotpot official website
 
+[![Build Status](https://travis-ci.org/xJkit/dg-hotpot-website.svg?branch=master)](https://travis-ci.org/xJkit/dg-hotpot-website)
+
 Cloudflare: MSN 帳號
 網址： 中華電信 domain 每年 10 月登入
 
