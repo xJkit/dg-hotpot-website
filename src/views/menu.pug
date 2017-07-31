@@ -1,0 +1,121 @@
+extends ./Partials/layout
+
+block content
+  -
+    var items = [
+      {
+        productName: '銅盤烤肉套餐',
+        price: 290,
+        imgUrl: '~assets/銅盤烤肉套餐.jpg',
+        productDescription: '牛、豬、羊 任選兩樣, 附白飯、泡菜、生菜',
+      },
+      {
+        productName: '羊肉爐鍋(冬季限定)',
+        price: 210,
+        imgUrl: '~assets/羊肉爐鍋(冬季限定).jpg',
+        productDescription: '羊肉爐鍋(冬季限定)',
+      },
+      {
+        productName: '海鮮豆腐鍋',
+        price: 130,
+        imgUrl: '~assets/海鮮豆腐鍋.jpg',
+      },
+      {
+        productName: '泡菜鍋',
+        price: 140,
+        imgUrl: '~assets/泡菜鍋.jpg',
+      },
+      {
+        productName: '素食鍋',
+        price: 130,
+        imgUrl: '~assets/素食鍋.jpg',
+      },
+      {
+        productName: '鴨血鍋',
+        price: 140,
+        imgUrl: '~assets/鴨血鍋.jpg',
+      },
+      {
+        productName: '藥膳羊(豬)肉鍋',
+        price: 140,
+        imgUrl: '~assets/藥膳羊豬肉鍋.jpg',
+      },
+      {
+        productName: '霜降豬肉鍋',
+        price: 170,
+        imgUrl: '~assets/霜降豬肉鍋.jpg',
+      },
+      {
+        productName: '雪花牛肉鍋',
+        price: 170,
+        imgUrl: '~assets/雪花牛肉鍋.jpg',
+      },
+      {
+        productName: '素食番茄鍋',
+        price: 140,
+        imgUrl: '~assets/素食番茄鍋.jpg',
+      },
+      {
+        productName: '蔬菜香菇鍋',
+        price: 150,
+        imgUrl: '~assets/蔬菜香菇鍋.jpg',
+      },
+      {
+        productName: '海鮮魚片鍋',
+        price: 150,
+        imgUrl: '~assets/海鮮魚片鍋.jpg',
+      },
+      {
+        productName: '番茄鍋',
+        price: 150,
+        imgUrl: '~assets/番茄鍋.jpg',
+      },
+      {
+        productName: '培根牛肉鍋',
+        price: 150,
+        imgUrl: '~assets/培根牛肉鍋.jpg',
+      },
+      {
+        productName: '泰式酸辣鍋',
+        price: 150,
+        imgUrl: '~assets/泰式酸辣鍋.jpg',
+      },
+      {
+        productName: '牛奶起司鍋',
+        price: 170,
+        imgUrl: '~assets/牛奶起司鍋.jpg',
+      },
+      {
+        productName: '沙茶豬(羊)肉鍋',
+        price: 140,
+        imgUrl: '~assets/沙茶豬羊肉鍋.jpg',
+      },
+      {
+        productName: '咖哩鍋',
+        price: 140,
+        imgUrl: '~assets/咖哩鍋.jpg',
+      },
+      {
+        productName: '南瓜鍋',
+        price: 150,
+        imgUrl: '~assets/南瓜鍋.jpg',
+      },
+      {
+        productName: '大腸臭臭鍋',
+        price: 130,
+        imgUrl: '~assets/大腸臭臭鍋.jpg',
+      },
+    ];
+
+  .row.menu
+    for item in items
+      .col.menu-item
+        .article
+          .priceBadge
+            p #{item.price} 元
+          .item-image
+            img(src=item.imgUrl, alt="")
+          .item-caption
+            h2= item.productName
+            if item.productDescription
+              p= item.productDescription

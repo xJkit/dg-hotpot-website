@@ -1,0 +1,132 @@
+//Dark Theme
+%dark-theme
+  background-color: #840124
+  a, p, h1, h2, h3, h4, h5, h6
+    color: white
+.dark-primary
+  color: white
+
+//light-theme
+.light-primary
+  color: #ff8223
+.light-link
+  color: #e68b2b
+  &:hover
+    text-decoration: underline
+
+
+//background image
+.wrapper
+  background-image: url("~assets/bg-flower.png")
+
+// nav bar
+#navbar
+  @extend %dark-theme
+  border-bottom: 2px solid #6c011e
+
+#footer
+  @extend %dark-theme
+
+//article
+.article
+  background-color: white
+  border-radius: 4px
+  border-top: 1px solid orange
+  li
+    list-style: decimal inside
+    color: gray
+  .title
+    border-bottom: 1px solid #ebebeb
+  // .content
+    // background-image: url("../images/bg-pot.jpg")
+    // background-repeat: no-repeat
+    // background-size: cover
+
+.overlay-dark
+  background-color: rgba(0,0,0, .5)
+
+//menu-items
+.item-image
+  min-height: 150px
+  overflow: hidden
+  img
+    width: 100%
+
+.item-caption
+  padding: 16px
+  p
+    color: gray
+.col.article
+  padding: 7px 0
+  margin: 4px
+.col.menu-item
+  padding: 15px
+.row.menu
+  text-align: left
+
+
+//footer
+#footer
+  h1
+    color: #000
+  h6
+    color: #ffcece
+  ul li
+    color: white
+
+  span.copyright
+    color: #ffcece
+
+
+/* Buttons */
+a.btn
+  display: block
+  font-size: 1.2rem
+  background-color: #840124
+  color: white
+  line-height: 2.6
+  width: 110px
+  border-radius: 5px
+  border-bottom: 2px solid #6c011e
+  text-align: center !important
+  margin: 6px auto
+  //click
+  &:active
+    border-bottom: none
+    border-top: 2px solid #6c011e
+
+a.btn-full
+  width: 100%
+
+
+
+.h-bar
+  height: 1px
+  background-color: gray
+  width: 100%
+  margin: 5px 0
+
+//background-color
+.bg-dark
+  background-color: #650000
+.bg-white
+  background-color: white
+
+/*Item Price Badge*/
+.priceBadge
+  color: white
+  background-color: #ff8223
+  border-radius: 10px
+  p
+    text-align: center !important
+
+/* Table */
+table
+  .dark
+    @extend %dark-theme
+    color: white
+
+
+
+
+

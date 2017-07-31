@@ -1,0 +1,93 @@
+$lg: 1024px
+$md: 760px
+$sm: 540px
+
+@media only screen and (min-width: $lg)
+  .col-lg-3
+    width: 25%
+    padding: 0 12px 5px
+    p
+      text-align: left
+  .col.menu-item
+    width: 25%
+@media only screen and (min-width: $md) and (max-width: $lg)
+  .col-md-6
+    width: 35%
+    padding: 0 12px 5px
+  .col.menu-item
+    width: 33%
+
+@media only screen and (min-width: $sm) and (max-width: $md)
+  .col-md-6
+    width: 45%
+    padding: 0 8px 5px
+  ul.menu
+    text-align: center
+    li
+      margin-right: 20px
+  .col.menu-item
+    width: 50%
+
+  .col.contact-item
+    width: 80%
+@media only screen and (max-width: $md)
+  html
+    font-size: 80%
+  .col
+    padding: 5px 24px 10px
+  .container
+    padding-left: 0
+  // i.copyright
+  //   display: none
+  #logo
+    padding: 4px 1rem
+
+
+//for collapse menu
+@media only screen and (min-width: $sm)
+  ul.menu
+    display: block !important //防止 jQuery 覆寫 display: none
+  #nav-icon
+    display: none
+@media only screen and (max-width: $sm)
+  .container
+    padding: 0 4px
+  .row
+    text-align: left
+  ul.menu
+    display: none
+    li
+      display: block
+      padding-left: 32px
+      text-align: left !important
+    a
+      color: #ffcece !important
+  #nav-icon
+    display: block
+
+  p
+    font-size: 22px
+    text-align: left
+  #footer
+    .col
+      display: block
+    .row
+      padding-left: 10px
+
+  .col.contact-item
+    width: 100%
+    padding: 0
+  #map
+    width: 280px
+    height: 280px
+
+
+// @media only screen and (max-width: $md)
+
+
+
+
+
+
+
+

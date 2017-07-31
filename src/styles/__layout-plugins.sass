@@ -1,0 +1,23 @@
+// slick style
+.slick-dots li button
+  &:before
+    font-size: 1rem
+    letter-spacing: 10px
+    opacity: .25
+
+%arrows
+  z-index: 100
+  height: 7rem
+  width: 5rem
+  // background-color: rgba(0,0,0,.7)
+.slick-prev
+  @extend %arrows
+  left: 1rem
+  &:before
+    font-size: 5rem
+
+.slick-next
+  @extend %arrows
+  right: 1rem
+  &:before
+    font-size: 5rem

@@ -1,0 +1,53 @@
+extends ./Partials/layout
+block content
+  .container
+    img.limit600(src="~assets/聯絡頂豐.jpg", alt="聯絡頂豐")
+    .row.ta-l
+      h6.lh-2 全省加盟： #[a.light-link(href="tel:0978865008") 0978-865-008]
+      h6.lh-2 電子郵件: #[a.light-link(href="mailto:go0978865008@gmail.com") go0978865008@gmail.com]
+
+    .row
+      .col.contact-item
+        .article
+          .title
+            h1 汐止汐科店
+          .content
+            p 電話：#[a.light-link(href="tel:0226480222") 02-2648-0222]
+            p 地址：新北市汐止區連興街52號1樓
+      .col.contact-item
+        .article
+          .title
+            h1 汐止大同店
+          .content
+            p 電話：#[a.light-link(href="tel:0226470962") 02-2647-0962]
+            p 地址：新北市汐止區大同路二段302號
+    .row
+      .col.map
+        #map
+block script
+  - var apiKey = 'AIzaSyBsmHY9UaE57tLqSQ2YE8aSNtA0RVKC8P8';
+  - var apiSrc = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
+  script(async defer src=apiSrc)
+  script.
+    function initMap(){
+      var latLng_DT = {lat: 25.0664595,lng: 121.6549878};
+      var latLng_LX = {lat: 25.0630561, lng: 121.6540218};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        center: {lat: 25.064710, lng: 121.654906},
+        scrollwheel: false,
+        zoom: 15
+      });
+      var marker_DT = new google.maps.Marker({
+        position: latLng_DT,
+        title: '頂豐小火鍋、銅盤烤肉（大同店）',
+        label: '同'
+      });
+
+      var marker_LX = new google.maps.Marker({
+        position: latLng_LX,
+        label: '科',
+        title: '頂豐小火鍋、銅盤烤肉（汐科店）'
+      });
+      marker_DT.setMap(map);
+      marker_LX.setMap(map);
+    }

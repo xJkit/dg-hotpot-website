@@ -1,0 +1,43 @@
+// icon-menu mixin (width, height, span-height, span-color)
+=hamburger-icon-4($width: 20px, $height: 18px, $span-height: 4px, $span-color: white)
+  // basic dimension
+  width: $width
+  height: $height
+  position: relative
+
+  //icon-bar def
+  span
+    position: absolute
+    width: 100%
+    height: $span-height
+    border-radius: 7px
+    background-color: $span-color
+    transition: transform .5s, opacity .3s
+    //position
+    &:nth-child(1)
+      top: 0
+      &.open
+        opacity: 0
+
+    &:nth-child(4)
+      bottom: 0
+      &.open
+        opacity: 0
+
+    &:nth-child(2)
+      top: calc(50% - (#{$span-height*0.5}) )
+      &.open
+        transform: rotate(45deg)
+
+    &:nth-child(3)
+      top: calc(50% - (#{$span-height*0.5}) )
+      &.open
+        transform: rotate(-45deg)
+
+
+
+
+
+
+
+

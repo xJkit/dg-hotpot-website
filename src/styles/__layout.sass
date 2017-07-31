@@ -1,0 +1,158 @@
+/* reset */
+a
+  text-decoration: none
+*
+  box-sizing: border-box
+img
+  width: 100%
+  height: auto
+  &.limit600
+    max-width: 600px
+
+
+$vh-100: 100vh
+//center container
+.container
+  max-width: 1024px
+  margin: 0 auto
+  padding-left: 16px
+  text-align: center
+
+#logo
+  margin-left: -16px
+//align inline elements
+.ta-l
+  text-align: left
+.ta-c
+  text-align: center
+.ta-r
+  text-align: right
+
+//menu
+.menu
+  li
+    display: inline-block
+    margin-right: 40px
+    a
+      line-height: 3
+
+#nav-icon
+  text-align: center
+  cursor: pointer
+  padding: 10px 0
+  p
+    display: inline-block
+  #nav-icon-bar
+    display: inline-block
+    +hamburger-icon-4
+
+//banner
+#banner-title
+  padding-top: 30px
+
+
+.wrapper
+  padding-bottom: 22px
+  min-width: 300px
+
+//content-box
+.row
+  text-align: center
+  vertical-align: text-top
+  padding-top: 20px
+
+.col
+  display: inline-block
+  // padding: 30px 20px 0 20px
+  vertical-align: text-top
+  p
+    padding-top: 16px
+// .col-*-* set in __rwd.sass
+
+  h4
+    padding-bottom: 24px
+
+.box-h285
+  height: 295px
+  position: relative
+
+//button absolute position
+.btn-bottom
+  position: absolute
+  bottom: 0
+  right: calc(50% - 55px)
+
+
+
+#footer
+  text-align: center
+  h6
+    line-height: 2
+  ul li
+  line-height: 1.6
+  .row .col
+    text-align: left
+    padding: 16px
+  p
+    line-height: 40px
+  span
+    line-height: 3
+
+.article
+  max-width: 700px
+  margin: 15px auto 0
+  padding: 16px
+  text-align: left
+  .title
+    padding: 10px 0
+    margin-bottom: 30px
+  .content
+    padding: 20px 10px
+    width: 100%
+    // position: relative
+    ul
+      padding-left: 10px
+    li
+      padding: 10px
+    // white-space: pre
+    .light-primary
+      text-align: center
+    .h-bar
+      margin-bottom: 24px
+
+
+
+/* menu */
+.col.menu-item .article
+  position: relative
+  .priceBadge
+    position: absolute
+    width: 90px
+    height: 50px
+    top: 7px
+    right: -10px
+/* Tables */
+table
+  margin: 0 auto
+th, td
+  padding: 4px 10px
+  text-align: left
+
+.col.contact-item
+  padding: 10px
+  width: 45%
+  .content
+    text-align: left
+
+
+/* Google Maps */
+.col.map
+  width: 100%
+#map
+  width: 100%
+  height: 400px
+
+
+
+
+

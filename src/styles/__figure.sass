@@ -1,0 +1,23 @@
+.responsive
+  max-width: 100%
+#logo
+  min-width: 320px
+
+//icons mixins
+@mixin icons($name)
+  display: inline-block
+  width: 60px
+  height: 60px
+  vertical-align: middle
+  margin-right: 5px
+  background-image: url('../assets/icons/#{$name}');
+  background-size: contain
+
+i.like
+  +icons("like.png")
+i.food
+  +icons("food.png")
+i.pots
+  +icons("pots.png")
+i.scooter
+  +icons("scooter.png")
