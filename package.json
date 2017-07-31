@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build",
+    "test": "npm run build && npm run clean",
     "start": "webpack-dev-server --open",
-    "prebuild": "rimraf dist",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
     "build": "webpack --config webpack.config.prod.js",
     "postbuild": "echo 'dg-hotpot.com.tw' >> dist/CNAME && echo '# [dg-hotpot Official Website](http://dg-hotpot.com.tw)' >> dist/readme.md && cp src/assets/icons/favicon.ico dist",
     "publish": "npm run build && node publish.js"
