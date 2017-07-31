@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run build",
     "start": "webpack-dev-server --open",
     "prebuild": "rimraf dist",
     "build": "webpack --config webpack.config.prod.js",
