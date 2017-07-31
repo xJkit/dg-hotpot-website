@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open",
     "prebuild": "rimraf dist",
     "build": "webpack --config webpack.config.prod.js",
-    "postbuild": "echo 'dg-hotpot.com.tw' >> dist/CNAME && echo '# dg-hotpot Official Website' >> dist/readme.md",
+    "postbuild": "echo 'dg-hotpot.com.tw' >> dist/CNAME && echo '# [dg-hotpot Official Website](http://dg-hotpot.com.tw)' >> dist/readme.md",
     "publish": "npm run build && node publish.js"
   },
   "keywords": [],
